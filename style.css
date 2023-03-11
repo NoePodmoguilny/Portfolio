@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Odor+Mean+Chey&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color1: rgb(34 34 34);
+    --color2: rgb(169, 204, 199);
+    --color3: #fffdfd;
+    --color4: rgb(14, 13, 13);
+}
+.bgColorBody{
+    background-color: var(--color2);
+}
+
+.bgColorMain{
+    background-color: var(--color3);
+}
+
+.font1{
+    font-family: "Odor Mean Chey";
+}
+.bordercolor{
+    border-color: var(--color1);
+}
+.txtshadowNombre{
+    color:var(--color2);
+    text-shadow: 3px 2px 4px var(--color4);
+}
+.txtshadowEducation{
+    color:var(--color3);
+    text-shadow: 3px 2px 3px var(--color4);
+}
+.borderDiv{
+    border-left: solid 1px var(--color1);
+    padding-left: 1em;
+}
+.hoverCV:hover{
+    transform: scale(0.9);
+}
+.skill{
+    position: relative;
+
+    color: var(--color1);
+
+    font-family: 'Odor Mean Chey';
+
+    padding: 3px;
+    margin: 2px;
+}
+
