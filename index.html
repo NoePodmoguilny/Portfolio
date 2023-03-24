@@ -4,272 +4,321 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <title>Noelia Podmoguilny</title>
 </head>
-  <body class="bgColorBody">
+    <body class="bgColorBody">
+
         <header>
-            <div class="flex justify-center static">
-              <div class="opacity-75 bg-cover rounded-md bg-center w-[60vw] h-[35vh] mt-[4em] max-lg:hidden" data-aos="zoom-in" style="background-image: url(./assets/bg.jpg) ">
-              </div>
-              <img src="./assets/fotonoe.png" alt="Foto perfil" 
-                  class="h-[25%] bordercolor border-2 rounded-full absolute left-[25%] top-[35%] max-lg:h-[25%] max-lg:left-[25%] max-lg:top-[8%]"data-aos="fade-right">
-              <div class="absolute right-[25%] top-[50%] max-lg:top-[35%]" data-aos="fade-left">
-                <div class="flex justify-center items-center">
-                  <a href="./assets/Podmoguilny Noelia Giselle - CV.pdf" target="_blank" class="hoverCV">
-                     <img src="./assets/cvicon.png" alt="Icono cv"> 
-                  </a> 
-                  <a class="inline-flex items-center gap-2 rounded border-2 border-[#171515] bg-[#171515] px-3 py-1 mx-[0.5em] text-sm font-medium text-white transition-colors hover:bg-transparent hover:text-[#171515] focus:outline-none focus:ring active:opacity-75" href="https://github.com/NoePodmoguilny" target="_blank" rel="noreferrer">
-                      GitHub
-                      <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                          <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" ></path>
-                      </svg>
-                  </a>
-                  <a class="inline-flex items-center gap-2 rounded border-2 border-[#0077b5] bg-[#0077b5] px-3 py-1 mx-[0.5em] text-sm font-medium text-white transition-colors hover:bg-transparent hover:text-[#0077b5] focus:outline-none focus:ring active:opacity-75" href="https://www.linkedin.com/in/npodmoguilny/" target="_blank" rel="noreferrer">
-                      LinkedIn
-                      <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                          <path fill="none" d="M0 0h24v24H0z" /><path d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"/>
-                      </svg>
-                  </a>
+            <!-- <div class="flex justify-center static">
+                <div data-aos="zoom-in" >
+                    <img 
+                        id="banner"
+                        style="opacity: 1" 
+                        src="./src/assets/bg.jpg" 
+                        class="rounded-md bg-center w-[60vw] h-[35vh] mt-[4em] max-lg:hidden" 
+                        alt="Imagen banner"
+                    >
+                </div> -->
+                <div class="container-slider">
+                    <div class="slider" id="slider">
+
+                        <div class="slider__section">
+                            <img src="./src/assets/bg.jpg" alt="" class="slider__img">
+                        </div>
+
+                        <div class="slider__section">
+                            <img src="./src/assets/bg2.jpg" alt="" class="slider__img">
+                        </div>
+
+                        <div class="slider__section">
+                            <img src="./src/assets/bg3.jpg" alt="" class="slider__img">
+                        </div>
+
+                        <div class="slider__section">
+                            <img src="./src/assets/bg4.jpg" alt="" class="slider__img">
+                        </div>
+
+                    </div>
+                    <div id="btn-right"></div>
                 </div>
-              </div>
+                <img 
+                    src="./src/assets/fotonoe.png" 
+                    alt="Foto perfil" 
+                    class="h-[25%] bordercolor border-2 rounded-full absolute left-[25%] top-[35%] max-lg:h-[25%] max-lg:left-[25%] max-lg:top-[8%]"data-aos="fade-right"
+                >
+                <div   
+                    class="absolute right-[25%] top-[50%] max-lg:top-[35%]" 
+                    data-aos="fade-left">
+                    <div class="flex justify-center items-center">
+                        <a href="./src/assets/Podmoguilny Noelia Giselle - CV.pdf" target="_blank" class="hoverCV">
+                            <img src="./src/assets/cvicon.png" alt="Icono cv"> 
+                        </a> 
+                        <a class="inline-flex items-center gap-2 rounded border-2 border-[#171515] bg-[#171515] px-3 py-1 mx-[0.5em] text-sm font-medium text-white transition-colors hover:bg-transparent hover:text-[#171515]" href="https://github.com/NoePodmoguilny" target="_blank" rel="noreferrer">
+                            GitHub
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" ></path>
+                            </svg>
+                        </a>
+                        <a class="inline-flex items-center gap-2 rounded border-2 border-[#0077b5] bg-[#0077b5] px-3 py-1 mx-[0.5em] text-sm font-medium text-white transition-colors hover:bg-transparent hover:text-[#0077b5]" href="https://www.linkedin.com/in/npodmoguilny/" target="_blank" rel="noreferrer">
+                            LinkedIn
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill="none" d="M0 0h24v24H0z" /><path d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
             <div class="flex-col my-[7%] max-lg:mt-[35em] max-md:mt-[30em] max-sm:mt-[25em]" data-aos="zoom-in">               
-              <div class="w-[60%] ml-[20%] font1 font-extrabold text-[2.5em] txtshadowNombre">Noelia Podmoguilny</div>
-              <div class="w-[60%] ml-[20%] text-gray-800 font1 text-2xl">Web Developer</div>
+                <div class="w-[60%] ml-[20%] font1 font-extrabold text-[2.5em] txtshadowName">
+                    Noelia Podmoguilny
+                </div>
+                <div class="w-[60%] ml-[20%]">
+                    <p id="text" class="text-gray-800 font1 text-2xl"></p>
+                </div>
 
-              <section class="flex flex-col">
-                  <div>
-                    <button id="skills" class="mt-2 ml-[20%] inline-flex items-center gap-2 rounded border-2 border-[#171515] bg-[#171515] px-3 py-1 mx-[0.5em] text-sm font-medium text-white transition-colors hover:bg-transparent hover:text-[#171515] focus:outline-none focus:ring active:opacity-75">Skills</button>
-                  </div>
-                  <div 
-                      id="anclaArr" 
-                      class="w-[60vw] mx-auto rounded-[2em] m-[2em]"
-                    >
-                  </div>
-              </section>
-
+                <section class="flex flex-col">
+                    <div>
+                        <button 
+                            id="skills" 
+                            class="mt-2 ml-[20%] inline-flex items-center gap-2 rounded border-2 border-[#171515] bg-[#171515] px-3 py-1 mx-[0.5em] text-sm font-medium text-white transition-colors hover:bg-transparent hover:text-[#171515]">
+                            Skills
+                        </button>
+                    </div>
+                    <div 
+                        id="anclaArr" 
+                        class="w-[60vw] mx-auto rounded-[2em] m-[2em]"
+                        >
+                    </div>
+                </section>
             </div>
         </header> 
 
         <main class="bgColorMain" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-          <section id="education" class=" w-[61%] ml-[20%]">
-              <div class="max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+            <section id="education" class=" w-[61%] ml-[20%]">
+                <div class="max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
                 <div class="max-w-xl">
-                  <h2 class="text-3xl txtshadowEducation font1 text-[2.5em]">Education</h2>
+                    <h2 class="text-3xl txtshadowEducation font1 text-[2.5em]">Education</h2>
                 </div>
             
                 <div
-                  class="mt-8 grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3"
+                    class="mt-8 grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3"
                 >
-                  <div class="flex items-start gap-4">
+                    <div class="flex items-start gap-4">
                     <span class="shrink-0 rounded-lg p-4">
-                      <svg
+                        <svg
                         class="h-5 w-5"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg"
-                      >
+                        >
                         <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
                         <path
-                          d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+                            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
                         ></path>
                         <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
                         ></path>
-                      </svg>
+                        </svg>
                     </span>
             
                     <div>
-                      <h2 class="text-lg text-gray-800 font1">TECNICATURA EN DESARROLLO DE SOFTWARE</h2>
+                        <h2 class="text-lg text-gray-800 font1">TECNICATURA EN DESARROLLO DE SOFTWARE</h2>
             
-                      <p class="mt-1 text-sm text-gray-700">
-                          I.E.S. "Juan Mantovani"
-                          (en curso)                        
-                      </p>
+                        <p class="mt-1 text-sm text-gray-700">
+                            I.E.S. "Juan Mantovani"
+                            (en curso)                        
+                        </p>
                     </div>
-                  </div>
+                    </div>
             
-                  <div class="flex items-start gap-4">
+                    <div class="flex items-start gap-4">
                     <span class="shrink-0 rounded-lg  p-4">
-                      <svg
+                        <svg
                         class="h-5 w-5"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg"
-                      >
+                        >
                         <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
                         <path
-                          d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+                            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
                         ></path>
                         <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
                         ></path>
-                      </svg>
+                        </svg>
                     </span>
             
                     <div>
-                      <h2 class="text-lg text-gray-800 font1">CURSO DE REACT</h2>
+                        <h2 class="text-lg text-gray-800 font1">CURSO DE REACT</h2>
             
-                      <p class="mt-1 text-sm text-gray-700">
-                          Codo a codo - Gobierno de la Ciudad de Buenos Aires
-                          (en curso)
-                      </p>
+                        <p class="mt-1 text-sm text-gray-700">
+                            Codo a codo - Gobierno de la Ciudad de Buenos Aires
+                            (en curso)
+                        </p>
                     </div>
-                  </div>
+                    </div>
             
-                  <div class="flex items-start gap-4">
+                    <div class="flex items-start gap-4">
                     <span class="shrink-0 rounded-lg p-4">
-                      <svg
+                        <svg
                         class="h-5 w-5"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg"
-                      >
+                        >
                         <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
                         <path
-                          d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+                            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
                         ></path>
                         <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
                         ></path>
-                      </svg>
+                        </svg>
                     </span>
             
                     <div>
-                      <h2 class="text-lg text-gray-800 font1">CURSO DE DISEÑO UX/UI</h2>
+                        <h2 class="text-lg text-gray-800 font1">CURSO DE DISEÑO UX/UI</h2>
             
-                      <p class="mt-1 text-sm text-gray-700">
-                          Codo a codo - Gobierno de la Ciudad de Buenos Aires
-                          (en curso)
-                      </p>
+                        <p class="mt-1 text-sm text-gray-700">
+                            Codo a codo - Gobierno de la Ciudad de Buenos Aires
+                            (en curso)
+                        </p>
                     </div>
-                  </div>
+                    </div>
             
-                  <div class="flex items-start gap-4">
+                    <div class="flex items-start gap-4">
                     <span class="shrink-0 rounded-lg p-4">
-                      <svg
+                        <svg
                         class="h-5 w-5"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg"
-                      >
+                        >
                         <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
                         <path
-                          d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+                            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
                         ></path>
                         <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
                         ></path>
-                      </svg>
+                        </svg>
                     </span>
             
                     <div>
-                      <h2 class="text-lg text-gray-800 font1">CURSO DE JAVASCRIPT</h2>
+                        <h2 class="text-lg text-gray-800 font1">CURSO DE JAVASCRIPT</h2>
             
-                      <p class="mt-1 text-sm text-gray-700">
-                          Educación IT
-                          (2022)
-                      </p>
+                        <p class="mt-1 text-sm text-gray-700">
+                            Educación IT
+                            (2022)
+                        </p>
                     </div>
-                  </div>
+                    </div>
             
-                  <div class="flex items-start gap-4">
+                    <div class="flex items-start gap-4">
                     <span class="shrink-0 rounded-lg p-4">
-                      <svg
+                        <svg
                         class="h-5 w-5"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg"
-                      >
+                        >
                         <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
                         <path
-                          d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+                            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
                         ></path>
                         <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
                         ></path>
-                      </svg>
+                        </svg>
                     </span>
             
                     <div>
-                      <h2 class="text-lg text-gray-800 font1">FULL STACK JAVA</h2>
+                        <h2 class="text-lg text-gray-800 font1">FULL STACK JAVA</h2>
             
-                      <p class="mt-1 text-sm text-gray-700">
-                          Codo a Codo - Gobierno de la Ciudad de Buenos Aires
-                          (2022)
-                      </p>
+                        <p class="mt-1 text-sm text-gray-700">
+                            Codo a Codo - Gobierno de la Ciudad de Buenos Aires
+                            (2022)
+                        </p>
                     </div>
-                  </div>
+                    </div>
             
-                  <div class="flex items-start gap-4">
+                    <div class="flex items-start gap-4">
                     <span class="shrink-0 rounded-lg p-4">
-                      <svg
+                        <svg
                         class="h-5 w-5"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg"
-                      >
+                        >
                         <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
                         <path
-                          d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+                            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
                         ></path>
                         <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
                         ></path>
-                      </svg>
+                        </svg>
                     </span>
             
                     <div>
-                      <h2 class="text-lg text-gray-800 font1">FULL STACK DEVELOPER</h2>
+                        <h2 class="text-lg text-gray-800 font1">FULL STACK DEVELOPER</h2>
             
-                      <p class="mt-1 text-sm text-gray-700">
-                          Argentina Programa - Ministerio de Economía de la Nación
-                          (2022)                        
-                      </p>
+                        <p class="mt-1 text-sm text-gray-700">
+                            Argentina Programa - Ministerio de Economía de la Nación
+                            (2022)                        
+                        </p>
                     </div>
-                  </div>
+                    </div>
                 </div>
-              </div>
+                </div>
             </section>
-          </main>         
+        </main>         
     
-      <footer aria-label="Site Footer" class="bgColorBody">
-          <div class="flex justify-center items-center m-8">                
-            <p class="text-gray-600 font-medium">Noelia Podmoguilny &copy; 2023 </p>
-          </div>
-      </footer>
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script>
-        AOS.init();
-      </script>
-      <script src="./index.js"></script>
-  </body>
+        <footer aria-label="Site Footer" class="bgColorBody">
+            <div class="flex justify-center items-center m-8">                
+                <p class="text-gray-600 font-medium">Noelia Podmoguilny &copy; 2023 </p>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <!-- <script src="./src/js/carousel.js"></script> -->
+        <script src="./src/js/slider.js"></script>
+        <script src="./src/js/marquee.js"></script>
+        <script src="./src/js/skills.js"></script>
+
+    </body>
 </html>
