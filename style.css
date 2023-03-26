@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Odor+Mean+Chey&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 *{
     margin: 0;
@@ -12,6 +12,8 @@
     --color2: rgb(169, 204, 199);
     --color3: #fffdfd;
     --color4: rgb(14, 13, 13);
+    --font1: "Odor Mean Chey";
+    --font2: "Montserrat";
 }
 
 .bgColorBody{
@@ -23,7 +25,10 @@
 }
 
 .font1{
-    font-family: "Odor Mean Chey";
+    font-family: var(--font1);
+}
+.font2{
+    font-family: var(--font2);
 }
 
 .bordercolor{
@@ -45,24 +50,24 @@
     padding-left: 1em;
 }
 
-.hoverCV:hover{
-    transform: scale(0.9);
-}
-
 .skill{
     position: relative;
+    /* El valor inicial de la propiedad flex-wrap es 'nowrap', es decir, si no hay suficiente espacio en el contenedor, los elementos se desbordarán. Para evitar eso usamos: 'display: inline-block' junto con 'flex-wrap: wrap' */
+    display: inline-block;
+    flex-wrap: wrap;
 
-    color: var(--color1);
-
-    font-family: 'Odor Mean Chey';
+    color: #171515;
+    font-family: var(--font2);
+    font-size: 1.5em;
 
     padding: 3px;
-    margin: 2px;
+    margin: 2px;    
 }
+
 
 /**** style slider *****/
 
-.container-slider{
+/* .container-slider{
     width: 65%;
     max-width: 900%;
     margin: auto;
@@ -85,6 +90,95 @@
     height: 100%;
     object-fit: cover;
     border-radius: 4px;
+} */
+
+
+/* Style section Projects */
+
+article {
+    --img-scale: 1.001;
+    --link-icon-translate: -20px;
+    --link-icon-opacity: 0;
+    position: relative;
+    border-radius: 16px;
+    box-shadow: none;
+    background: #fff;
+    transform-origin: center;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+}
+
+article a::after {
+    position: absolute;
+    inset-block: 0;
+    inset-inline: 0;
+    cursor: pointer;
+    content: "";
+}
+
+
+article h2 {
+    margin: 0 0 18px 0;
+    font-family: var(--font1);
+    font-size: 1.9rem;
+    color: var(--color1);
+}
+
+article img {
+    max-width: 100%;
+    transform-origin: center;
+    transform: scale(var(--img-scale));
+    transition: transform 0.4s ease-in-out;
+}
+
+.article-body {
+    padding: 24px;
+}
+.article-body>p{
+    font-family: var(--font2);
+    color: var(--color1);
+}
+
+article a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color1);
+    font-family: var(--font1);
+}
+
+article a:focus {
+    outline: 1px dotted var(--color1);
+}
+
+article a .icon {
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+    transform: translateX(var(--link-icon-translate));
+    opacity: var(--link-icon-opacity);
+    transition: all 0.3s;
+}
+
+article:has(:hover, :focus) {
+    --img-scale: 1.1;
+    --title-color: var(--color1);
+    --link-icon-translate: 0;
+    --link-icon-opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.16) 
+                0px 10px 36px 0px, 
+                rgba(0, 0, 0, 0.06) 
+                0px 0px 0px 1px;
+}
+
+.articles {
+    display: grid;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
 }
 
 
